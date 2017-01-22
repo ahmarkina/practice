@@ -24,6 +24,11 @@ gulp.task('html', function () {
         .pipe(gulp.dest('./build'));
 });
 
+gulp.task('fonts', function () {
+    return gulp.src('./src/Fonts/*.*')
+        .pipe(gulp.dest('./build/Fonts'))
+});
+
 gulp.task ('watch', function () {
     gulp.watch('./src/css/*.less', gulp.series('css'));
     gulp.watch('./src/*.html', gulp.series('html'));

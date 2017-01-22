@@ -1,44 +1,216 @@
-//= templates/header.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <!--<link rel="stylesheet" type="text/css" href="slick/slick.css"/>-->
+    <link rel="stylesheet" href="css/style.css">
+    <!//<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>-->
+    <meta name="viewport" content="width=device-width">
+</head>
+<body>
+<div class="Wrapper">
+    <div class="WrapHeaderDouble">
+        <header class="wrapHeader">
+            <div class="Logo">
+                <img class="Logo__img" src="../build/svg/logo-01.svg" alt="Logo">
+            </div>
+            <div class="WrapMenu">
+                <ul class="Menu">
+                    <li class="MenuItem"><a class="MenuItem__Link" href="#">Главная</a></li>
+                    <li class="MenuItem"><a class="MenuItem__Link" href="#">О компании</a></li>
+                    <li class="MenuItem"><a class="MenuItem__Link" href="#">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="WrapCallMe">
+                <div class="CallMe">
+                    <img class="CallMe__phoneIcon" src="../build/svg/phone-01.svg" alt="PhoneIcon">
+                    <span class="CallMe__phoneNumber">+7 (495) 991 48 64</span>
+                </div>
+                <a class="CallMeLink" href="#">Перезвоните мне</a>
+            </div>
+        </header>
+    </div>
 
-    <main class="Content">
-        <h3 class="Content__personInitial">Hi Name Surname,</h3>
-        <span class="Content__Letter">
-            Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-        </span>
-        <p class="Content__Letter">
-            Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim.
-        </p>
-        <p class="Content__letterAfter">
-            On behalf of the Company
-        </p>
-        <span class="Content__letterAfter">
-            Name Surname
-        </span>
-        <div class="Content__Button clearfix">
-            <a class="Content__buttonShape">
-                <span class="Content__buttomFirstLine">click here</span>
-                <span class="Content__buttonSecondLine">LOREM</span>
-            </a>
+
+    <!-- -------------------------------------------------------------------------------------- -->
+
+    <div class="WrapSlider">
+        <div class="Slider">
+            <div class="SliderLeftSide">
+                <img class="SliderLeftSide__img" src="/build/img/Slider_picture.png" alt="Slider_picture">
+            </div>
+            <div class="SliderRightSide">
+                <h1 class="SliderRightSide__Title">ВЕНТИЛИРУЕМЫЕ<br>ФАСАДЫ</h1>
+                <p class="SliderRightSide__Subscribe">Вентилируемые фасады в последнее время получили<br>очень большое распространение как в частном, так и в<br>многоэтажном строительстве. Навесные фасады<br>обладают рядом преимуществ</p>
+                <input class="SliderRightSide__btnLeft" type="image" src="/build/svg/strelka-01.svg" alt="Submit">
+                <input class="SliderRightSide__btnRight" type="image" src="/build/svg/strelka-01.svg" alt="Submit">
+            </div>
         </div>
+        <!--<div class="Slider">
+            <div class="SliderLeftSide">
+                <img class="SliderLeftSide__img" src="/build/img/Slider_picture.png" alt="Slider_picture">
+            </div>
+            <div class="SliderRightSide">
+                <h1 class="SliderRightSide__Title">ВЕНТИЛИРУЕМЫЕ<br>ФАСАДЫ</h1>
+                <p class="SliderRightSide__Subscribe">Вентилируемые фасады в последнее время получили<br>очень большое распространение как в частном, так и в<br>многоэтажном строительстве. Навесные фасады<br>обладают рядом преимуществ</p>
+                <input class="SliderRightSide__btnLeft" type="image" src="/build/svg/strelka-01.svg" alt="Submit">
+                <input class="SliderRightSide__btnRight" type="image" src="/build/svg/strelka-01.svg" alt="Submit">
+            </div>
+        </div>
+        <div class="Slider">
+            <div class="SliderLeftSide">
+                <img class="SliderLeftSide__img" src="/build/img/Slider_picture.png" alt="Slider_picture">
+            </div>
+            <div class="SliderRightSide">
+                <h1 class="SliderRightSide__Title">ВЕНТИЛИРУЕМЫЕ<br>ФАСАДЫ</h1>
+                <p class="SliderRightSide__Subscribe">Вентилируемые фасады в последнее время получили<br>очень большое распространение как в частном, так и в<br>многоэтажном строительстве. Навесные фасады<br>обладают рядом преимуществ</p>
+                <input class="SliderRightSide__btnLeft" type="image" src="/build/svg/strelka-01.svg" alt="Submit">
+                <input class="SliderRightSide__btnRight" type="image" src="/build/svg/strelka-01.svg" alt="Submit">
+            </div>
+        </div>-->
+
+    </div>
+
+    <!-- -------------------------------------------------------------------------------------- -->
+
+    <main class="WrapInfo">
+        <section class="Info">
+            <div class="InfoLeftSide">
+                <img class="InfoLeftSide__img" src="../build/svg/logo-02.svg" alt="">
+                <h3 class="InfoLeftSide__Supply">Обеспечиваем<br>индивидуальный подход<br>к реализации каждого<br>проекта.</h3>
+            </div>
+            <div class="InfoRightSide">
+                <p class="InfoRightSide__RussianProduction">Российская производственная компания ООО «СК АЛЬТЭКСАЛЮМИНИЙ» воплощает самые смелые идеи, исходя из потребностей заказчиков, опыта проектировщиков и замыслов архитекторов. Мы предлагаем комплексные решения по остеклению на всех этапах строительства таких объектов, как:</p>
+                <ul class="InfoRightSideMenu">
+                    <li class="InfoRightSideMenu__Item">бизнес-центры,</li>
+                    <li class="InfoRightSideMenu__Item">торгово-развлекательные центры,</li>
+                    <li class="InfoRightSideMenu__Item">административные здания,</li>
+                    <li class="InfoRightSideMenu__Item">жилые дома и коттеджи бизнес-класса и пр.</li>
+                </ul>
+                <p class="InfoRightSide__Decisions">Широкий ассортимент предлагаемых нами решений обеспечит Вам сочетание качественного остекления, соответствующего условиям эксплуатации, и современного дизайна при разумной стоимости готовой продукции.</p>
+            </div>
+
+        </section>
     </main>
-    <div class="Divider"></div>
-    <footer class="footer">
-        <ul class="footer_menu">
-            <a href="#" class="footer__ItemLink"><li class="footer__MenuItem">UNSUBSCRIBE</li></a>
-            <a href="#" class="footer__ItemLink"><li class="footer__MenuItem">ABOUT</li></a>
-            <a href="#" class="footer__ItemLink"><li class="footer__MenuItem">PRESS</li></a>
-            <a href="#" class="footer__ItemLink"><li class="footer__MenuItem">CONTACT</li></a>
-            <a href="#" class="footer__ItemLink"><li class="footer__MenuItem">STAY CONNECTED</li></a>
-        </ul>
-        <ul class="footer__SecMenu">
-            <a href="#" class="footer__ItemLink2"><li class="footer__MenuItem2">Head Office & Registered Office</li></a>
-            <a href="#" class="footer__ItemLink2"><li class="footer__MenuItem2">Company name Ltd, Adress Line, Company Street, City, State, Zip Code</li></a>
-            <a href="#" class="footer__ItemLink2"><li class="footer__MenuItem2">Tel: 123 555 555</li></a>
-            <a href="#" class="footer__ItemLink2"><li class="footer__MenuItem2">customercare@company.com</li></a>
-        </ul>
+
+    <!-- Advantages --------------------------------------------------------------------------------------- -->
+
+    <section class="WrapAdvantages">
+        <h2 class="AdvantagesTitle">НАШИ ПРЕИМУЩЕСТВА</h2>
+
+        <div class="WrapAdvantagesSubscriptionDouble">
+            <div class="AdvantagesSubscription">
+
+                <div class="WrapAdvantagesPointDouble">
+                    <div class="AdvantagesPoint">
+                        <div class="WrapImg">
+                            <img class="WrapImg__img" src="../build/svg/team-01.svg" alt="TeamIcon">
+                        </div>
+                        <h5 class="AdvantagesPoint__Title">Сильная команда</h5>
+                        <p class="AdvantagesPoint__Subscription">Наши специалисты выполняют<br>даже самые сложные дизайнерские<br>и технические проекты.</p>
+                    </div>
+                </div>
+                <div class="WrapAdvantagesPointDouble">
+                <div class="AdvantagesPoint">
+                    <div class="WrapImg">
+                        <img class="WrapImg__img" src="../build/svg/speed-01.svg" alt="SpeedIcon">
+                    </div>
+                    <h5 class="AdvantagesPoint__Title">Скорость работы</h5>
+                    <p class="AdvantagesPoint__Subscription">Наши специалисты выполняют<br>даже самые сложные изайнерские<br>и технические проекты.</p>
+                </div>
+                </div>
+                <div class="WrapAdvantagesPointDouble">
+                <div class="AdvantagesPoint">
+                    <div class="WrapImg">
+                        <img class="WrapImg__img" src="../build/svg/technology-01.svg" alt="TechnologyIcon">
+                    </div>
+                    <h5 class="AdvantagesPoint__Title">Современное борудование<br>и новые технологии</h5>
+                    <p class="AdvantagesPoint__Subscription">Наши специалисты выполняют<br>даже самые сложные изайнерские<br>и технические проекты.</p>
+                </div>
+                </div>
+                <div class="WrapAdvantagesPointDouble">
+                <div class="AdvantagesPoint">
+                    <div class="WrapImg">
+                        <img class="WrapImg__img" src="../build/svg/proizvodstvo-01.svg" alt="ProductionIcon">
+                    </div>
+                    <h5 class="AdvantagesPoint__Title">Собственное производство</h5>
+                    <p class="AdvantagesPoint__Subscription">Наши специалисты выполняют<br>даже самые сложные изайнерские<br>и технические проекты.</p>
+                </div>
+                </div>
+                <div class="WrapAdvantagesPointDouble">
+                <div class="AdvantagesPoint">
+                    <div class="WrapImg">
+                        <img class="WrapImg__img" src="../build/svg/garantia-01.svg" alt="sdf">
+                    </div>
+                    <h5 class="AdvantagesPoint__Title">Гарантия качества</h5>
+                    <p class="AdvantagesPoint__Subscription">Наши специалисты выполняют<br>даже самые сложные изайнерские<br>и технические проекты.</p>
+                </div>
+                </div>
+                <div class="WrapAdvantagesPointDouble">
+                <div class="AdvantagesPoint">
+                    <div class="WrapImg">
+                        <img  class="WrapImg__img" src="../build/svg/partners-01.svg" alt="Partners">
+                    </div>
+                    <h5 class="AdvantagesPoint__Title AdvantagesPoint__Title_DifferentPadding">Профессиональные партнеры</h5>
+                    <p class="AdvantagesPoint__Subscription">Наши специалисты выполняют<br>даже самые сложные изайнерские<br>и технические проекты.</p>
+                </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Approach -------------------------------------------------------------------------------------- -->
+    <section class="WrapApproach">
+        <div class="Approach">
+            <p class="Approach__Title">КОМПЛЕКСНЫЙ ПОДХОД</p>
+            <ul class="ApproachList">
+                <li class="ApproachItem"><span class="ApproachItem__num">1</span>Обследование, замеры, содействие в составлении ТЗ</li>
+                <li class="ApproachItem"><span class="ApproachItem__num">2</span>Проектирование, подбор оптимального<br>варианта системного решения</li>
+                <li class="ApproachItem"><span class="ApproachItem__num">3</span>Составление проектной документации, сметы</li>
+                <li class="ApproachItem"><span class="ApproachItem__num">4</span>Изготовление элементов системы, доставка</li>
+                <li class="ApproachItem"><span class="ApproachItem__num">5</span>Монтаж, сдача выполненной работы</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Block CTA -------------------------------------------------------------------------------------- -->
+    <section class="WrapBlockCTA">
+        <div class="BlockCTA">
+            <p class="BlockCTA__Suggestion">Команда ООО «СК АльтэксАлюминий»<br>предлагает комплексный подход по выполнению<br>системных решений «под ключ»</p>
+            <button class="BlockCTA__Connection">Связаться со мной</button>
+        </div>
+    </section>
+
+    <!-- Footer -------------------------------------------------------------------------------------- -->
+
+    <footer class="WrapFooter">
+        <div class="Footer">
+            <div class="FooterLeftSide">
+                <span class="FooterLeftSide__Address">г. Москва,<br> ул. Дорогобужская д.14, стр.1</span>
+            </div>
+            <div class="FooterRightSide">
+                <span class="FooterRightSide__Telephone">+7 (495) 991 48 64</span>
+                <a href="#" class="FooterRightSide__Info">info@proaltex.ru</a>
+            </div>
+        </div>
     </footer>
 
+    </div>
 
 
-//= templates/footer.html
+   <!-- <script src="js/jquery.min.js"></script>
+    <script src="slick/slick.min.js"></script>
+    <script src="js/script.js"></script>-->
+
+
+
+
+</body>
+</html>
+
+
+
 
