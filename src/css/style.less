@@ -46,6 +46,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    min-width: 100px;
 
     &:hover {
       cursor: pointer;
@@ -81,8 +82,9 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  padding-left: 16px;
+  padding-left: 15px;
   margin-top: 7px;
+  min-width: 268px;
 
   &__phoneIcon {
     margin-left: 9px;
@@ -114,11 +116,21 @@
 /* Slider -------------------------------------------------------------------------------------------------*/
 
 .WrapSlider {
-  padding-bottom: 72px;
+  padding-bottom: 77px;
+  max-width: 1126px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.WrapSliderItem {
+  width: 100%;
+  display: flex;
+  margin: auto;
+  overflow: hidden;
 }
 
 .Slider {
-  max-width: 1126px;
+  width: 100%;
   /*background-image: url("/build/img/bg1.png");*/
   background: repeating-linear-gradient(
           -45deg,
@@ -127,9 +139,12 @@
           #69B7D6 1px,
           #69B7D6 6px
   );
-  margin: auto;
+  /*margin: auto;*/
   display: flex;
+  flex-direction: row;
+  overflow: hidden;
 }
+
 
 .SliderLeftSide {
 
@@ -474,7 +489,78 @@ margin-bottom: 4px;
   }
 }
 
+/* Slick dots style rewrite-------------------------------------------------------------------------*/
 
+.slick-dots {
+  top:334px;
+  right: 91px;
+  height: 12px;
+}
 
+.slick-dots li {
+  margin: 0 1.8px;
+}
 
+.slick-dots li button {
+  font-size: 0;
+  line-height: 0;
+  display: block;
+  width: 12px;
+  height: 12px;
+  padding: 5px;
+  cursor: pointer;
+  border: 0;
+  outline: none;
+  background-color: #71B8D6;
+}
 
+.slick-dots li button::before {
+  content: "";
+}
+
+.slick-dots li button:hover, .slick-dots li button:focus {
+  background-color: #FFFFFF;
+}
+
+.slick-dotted.slick-slider {
+  margin-bottom: 0;
+}
+
+.slick-prev::before {
+  content: url(/build/svg/strelka-01.svg);
+  z-index: 1000;
+  font-size: 0;
+}
+
+.slick-prev {
+  position: absolute;
+  top: 341px;
+  z-index: 1000;
+  left: 628px;
+  width: 40px;
+  height: 40px;
+}
+
+.slick-next::before {
+  content: url(/build/svg/strelka-01.svg);
+  z-index: 1000;
+  font-size: 0;
+}
+
+.slick-next {
+  position: absolute;
+  top: 321.5px;
+  z-index: 1000;
+  left: 664px;
+  width: 40px;
+  height: 40px;
+  transform: rotate(180deg);
+}
+
+.slick-loading .slick-list {
+  overflow: hidden;
+}
+
+.slick-slider {
+  overflow: hidden;
+}
