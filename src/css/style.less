@@ -18,7 +18,7 @@
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  padding: 28px 36px 51px;
+  padding: 28px 36px 11px;
 }
 
 .Logo {
@@ -107,31 +107,28 @@
   font-family: "Open Sans";
   color: rgb(0, 0, 0);
   margin-top: -7px;
-  text-decoration-color: #0F7EB5;
-  text-decoration-style: dashed;
   margin-left: 4px;
+  text-decoration: none;
+  position: relative;
 
+  &:hover {
+    background-color: #69B7D6;
+  }
+
+  &:after {
+    content: url(/build/img/Border.png);
+    position: absolute;
+    top:6px;
+    left: 0;
+  }
 }
 
 /* Slider -------------------------------------------------------------------------------------------------*/
 
-.WrapSlider {
-  padding-bottom: 77px;
+.WrapSliders {
   max-width: 1126px;
   margin: auto;
-  overflow: hidden;
-}
-
-.WrapSliderItem {
-  width: 100%;
   display: flex;
-  margin: auto;
-  overflow: hidden;
-}
-
-.Slider {
-  width: 100%;
-  /*background-image: url("/build/img/bg1.png");*/
   background: repeating-linear-gradient(
           -45deg,
           #00A9DA,
@@ -139,25 +136,40 @@
           #69B7D6 1px,
           #69B7D6 6px
   );
-  /*margin: auto;*/
-  display: flex;
-  flex-direction: row;
-  overflow: hidden;
+  overflow: visible;
+  margin-top: 41px;
+  margin-bottom: 76px;
 }
 
+.WrapSliderLeft {
+  max-width: 54%;
+  overflow: visible;
+  position: relative;
+}
+
+.WrapSliderRight {
+  width: 46%;
+}
+
+.WrapSliderItem {
+  width: 100%;
+  display: flex;
+  margin: auto;
+}
+
+.Slider {
+  overflow: visible;
+}
 
 .SliderLeftSide {
-
+  overflow: visible;
   &__img {
     margin: -26px 27px;
   }
 }
 
-
-
 .SliderRightSide {
-  padding: 53px 40px 53px 25px;
-
+  padding: 53px 40px 53px 18px;
 
   &__Title {
     font-size: 34px;
@@ -165,7 +177,7 @@
     color: #FFFFFF;
     font-weight: bold;
     line-height: 1.2;
-    margin-bottom: 47px;
+    margin-bottom: 46px;
   }
 
   &__Subscribe {
@@ -178,15 +190,6 @@
     margin-left: 3px;
   }
 
-  &__btnLeft {
-    margin-left: 3px;
-  }
-
-  &__btnRight {
-    transform: rotate(180deg);
-    margin-left: -7px;
-
-  }
 }
  /* Section 'About Us'------------------------------------------------------------*/
 
@@ -301,9 +304,7 @@
 }
 
 .AdvantagesPoint {
- /* flex-basis: 100%;*/
   flex-direction: column;
-  /*align-items: flex-start;*/
   padding-right: 30px;
   margin-bottom: 49px;
 
@@ -343,22 +344,19 @@
 
 .WrapApproach {
   background-image: url("/build/img/house.png"), url("/build/img/bg1.png");
-  background-position: top -145px left ~"calc(50% + 480px)", top right 0px;
+  background-position: top -145px left ~"calc(50% + 475px)", top right 0px;
   background-repeat: no-repeat, repeat;
   background-size: 1029px, auto;
   position: relative;
 
-
   /* &:after {
     content: url("/build/img/house.png");
-
     position: absolute;
     display: block;
     bottom: -85px;
     right: -10px;
     max-width: 1029px;
     height: 704px;
-
   } */
 
 }
@@ -406,6 +404,8 @@
   }
 }
 
+/* Block CTA ----------------------------------------------------------------------------------------- */
+
 .WrapBlockCTA {
   padding: 62px 0px;
   margin: auto;
@@ -442,6 +442,8 @@
   }
 }
 
+/* Footer -------------------------------------------------------------------------------------------*/
+
 .WrapFooter {
   background-color: #2B2D2E;
 }
@@ -449,7 +451,7 @@
 .Footer {
   max-width: 1126px;
   margin: auto;
-  padding: 55px 36px;
+  padding: 58px 33px 58px 36px;
   display: flex;
   justify-content: space-between;
 }
@@ -488,37 +490,16 @@ margin-bottom: 4px;
   }
 }
 
-/* Slick dots style rewrite-------------------------------------------------------------------------*/
+/* Slick coarusel rewrite-------------------------------------------------------------------------*/
 
 .slick-dots {
   top:334px;
-  right: 91px;
+  right: -168px;
   height: 12px;
 }
 
 .slick-dots li {
   margin: 0 1.8px;
-}
-
-.slick-dots li button {
-  font-size: 0;
-  line-height: 0;
-  display: block;
-  width: 12px;
-  height: 12px;
-  padding: 5px;
-  cursor: pointer;
-  border: 0;
-  outline: none;
-  background-color: #71B8D6;
-}
-
-.slick-dots li button::before {
-  content: "";
-}
-
-.slick-dots li button:hover, .slick-dots li button:focus {
-  background-color: #FFFFFF;
 }
 
 .slick-dotted.slick-slider {
@@ -535,7 +516,7 @@ margin-bottom: 4px;
   position: absolute;
   top: 341px;
   z-index: 1000;
-  left: 628px;
+  left: 20px;
   width: 40px;
   height: 40px;
 }
@@ -548,18 +529,28 @@ margin-bottom: 4px;
 
 .slick-next {
   position: absolute;
-  top: 321.5px;
-  z-index: 1000;
-  left: 664px;
+  top: 341px;
+  z-index: 1001;
+  left: 56px;
   width: 40px;
   height: 40px;
-  transform: rotate(180deg);
+  /*transform: rotate(180deg);*/
 }
 
-.slick-loading .slick-list {
-  overflow: hidden;
+.slick-dots li button::before {
+  font-family: 'slick';
+  font-size: 6px;
+  line-height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  content: "";
+  display: block;
+  width: 12px;
+  height: 12px;
+  background-color: #71B8D6;
+  text-align: center;
 }
 
-.slick-slider {
-  overflow: hidden;
-}
