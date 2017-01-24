@@ -130,6 +130,15 @@
   max-width: 1126px;
   margin: auto;
   display: flex;
+  overflow: visible;
+  margin-top: 16px;
+  margin-bottom: 49px;
+  position: relative;
+}
+
+.bc {
+
+  position: absolute;
   background: repeating-linear-gradient(
           -45deg,
           #00A9DA,
@@ -137,9 +146,10 @@
           #69B7D6 1px,
           #69B7D6 6px
   );
-  overflow: visible;
-  margin-top: 41px;
-  margin-bottom: 76px;
+  top: 26px;
+  bottom:26px;
+  left: 0;
+  right: 0;
 }
 
 .WrapSliderLeft {
@@ -164,13 +174,15 @@
 
 .SliderLeftSide {
   overflow: visible;
+
   &__img {
-    margin: -26px 27px;
+    margin: 0px 27px;
   }
 }
 
 .SliderRightSide {
   padding: 53px 40px 53px 18px;
+  margin-top: 24px;
 
   &__Title {
     font-size: 34px;
@@ -494,7 +506,7 @@ margin-bottom: 4px;
 /* Slick coarusel rewrite-------------------------------------------------------------------------*/
 
 .slick-dots {
-  top:334px;
+  top:358px;
   right: -168px;
   height: 12px;
 }
@@ -515,7 +527,7 @@ margin-bottom: 4px;
 
 .slick-prev {
   position: absolute;
-  top: 341px;
+  top: 364px;
   z-index: 1000;
   left: 20px;
   width: 40px;
@@ -530,7 +542,7 @@ margin-bottom: 4px;
 
 .slick-next {
   position: absolute;
-  top: 321px;
+  top: 344px;
   z-index: 1001;
   left: 54px;
   width: 40px;
